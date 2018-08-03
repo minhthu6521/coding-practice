@@ -31,7 +31,7 @@ Given an array arr, find element pairs whose sum equal the second argument arg a
 
 You may use multiple pairs that have the same numeric elements but different indices. Each pair should use the lowest possible available indices. Once an element has been used it cannot be reused to pair with another element. For instance, pairwise([1, 1, 2], 3) creates a pair [2, 1] using the 1 at indice 0 rather than the 1 at indice 1, because 0+2 < 1+2.
 
-In order to run this function, use 'node main.js pairwise currentInventory newInventory' or just 'node main.js pairwise' to use the example
+In order to run this function, use 'node main.js pairwise array sum' or just 'node main.js pairwise' to use the example
 Example:
 pairwise([2,2 ,2], 4)
 `
