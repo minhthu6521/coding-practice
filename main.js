@@ -4,6 +4,7 @@
 
 const addItemToList = require('./addItemToList')
 const permAlone = require('./permAlone')
+const pairwise = require('./pairwise')
 
 const helperText = `
 Type 'node main.js name' with name is the name of the function you want to try
@@ -13,7 +14,8 @@ Here are the list of function that you can try and their descriptions:
 
 const functionList = [
   addItemToList,
-  permAlone
+  permAlone,
+  pairwise
 ]
 
 const input = process.argv.slice(2)
@@ -31,12 +33,14 @@ if (input.length === 0) {
       return JSON.parse(x)
     } else return x
   })
-  const exeFunc = functionList.reduce( (result, x) => {
+  const exeFunc = functionList.reduce((result, x) => {
     if(x.name === input[0]) {
       result = x
     }
     return result
-  })
-  exeFunc.function(functionParam)
+  }, null)
+  if (exeFunc) {
+    exeFunc.function(functionParam)
+  } else return console.log("There is no function with this name")
 }
 
