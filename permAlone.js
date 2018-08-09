@@ -47,7 +47,7 @@ function permAlone(string) {
 
 function result(args) {
   if(args.length < 1) {
-    return console.log(permAlone('aab'));
+    return console.log(description + '\nResult:\n' + permAlone('aab'));
   } else {
     return console.log(permAlone(args[0]));
   }

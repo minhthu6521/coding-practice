@@ -6,6 +6,7 @@ const addItemToList = require('./addItemToList')
 const permAlone = require('./permAlone')
 const pairwise = require('./pairwise')
 const bubblesort = require('./bubblesort')
+const selectionsort = require('./selectionSort')
 
 const helperText = `
 Type 'node main.js name' with name is the name of the function you want to try
@@ -17,7 +18,8 @@ const functionList = [
   addItemToList,
   permAlone,
   pairwise,
-  bubblesort
+  bubblesort,
+  selectionsort
 ]
 
 const input = process.argv.slice(2)

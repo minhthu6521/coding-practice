@@ -43,6 +43,7 @@ function addItemToList(args) {
   if(args.length < 2) {
     arr1 = curInv;
     arr2 = newInv
+    console.log(description + '\nResult:\n')
   } else {
     arr1 = args[0];
     arr2 = args[1];

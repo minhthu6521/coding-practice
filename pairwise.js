@@ -19,7 +19,7 @@ function pairwise(arr, arg) {
 
 function result(args) {
   if(args.length < 2) {
-    return console.log(pairwise([2,2 ,2], 4));
+    return console.log(description + '\nResult:\n' + pairwise([2,2 ,2], 4));
   } else {
     return console.log(pairwise(args[0], args[1]));
   }
